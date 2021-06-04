@@ -17,7 +17,7 @@
 
   /* Font size */
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 25px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -92,6 +92,14 @@ p {
   margin: 4px 0;
 }
 
+/* section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Navbar */
 #navber {
   display: flex;
@@ -157,4 +165,63 @@ p {
 
 .home_contact:hover {
   background-color: var(--color-dark-blue);
+}
+
+/* about */
+.about__career {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0px;
+}
+
+.career {
+  width: 30%;
+}
+
+.career__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 170px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.career__icon__ktl {
+  width: 170px;
+  height: 120px;
+  font-size: 70px;
+  line-height: 120px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.career img:hover {
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.career img {
+  transition: all 250ms ease;
+}
+
+.career__title,
+.career__description {
+  color: var(--color-dark-grey);
+}
+
+.career__description {
+  font-size: var(--font-small);
+}
+
+.jop {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 4px 0px;
+}
+
+.jop__period {
+  font-size: var(--font-micro);
+  color: var(--color-light-grey);
 }
