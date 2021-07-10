@@ -238,6 +238,10 @@ p {
   background-color: var(--color-yellow);
 }
 
+.section__container {
+  margin: auto;
+}
+
 .skillset {
   display: flex;
   background-color: var(--color-dark-grey);
@@ -320,7 +324,7 @@ p {
   left: 8px;
   opacity: 0;
   background-color: rebeccapurple;
-  transition: all ease-in 50ms;
+  transition: all ease-in 250ms;
 }
 
 .work__projects {
@@ -356,11 +360,13 @@ p {
   flex-direction: column;
   justify-content: center;
   opacity: 0;
+  transform: translateY(10px);
   transition: all ease-in 200ms;
 }
 
 .project__description:hover.project__description {
   opacity: 0.8;
+  transform: translateY(0px);
 }
 
 .project__description h3 {
@@ -377,4 +383,47 @@ p {
   margin-top: 8px;
   background-color: var(--color-dark-white);
   margin-left: -12px;
+}
+
+/* testimonial */
+
+#testimonials {
+  background-color: var(--color-light-white);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial_sppeech-bubble {
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+  padding: 18px;
+}
+
+.testimonial_sppeech-bubble p {
+  color: var(--color-grey);
+}
+
+.testimonial_sppeech-bubble a {
+  color: var(--color-blue);
 }
