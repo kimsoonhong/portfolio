@@ -49,9 +49,8 @@
             <img src="img/me.jpg" alt="shong profile phoo" class="home__avatar">
             <h1 class="home__title">Hello, <br/>I'm shong</h1>
             <h2 class="home__description">나를 강조할 수 있는 문장이 뭐가 있으려나...</h2>
-            <button class="home_contact">Contact Me</button>
+            <button class="home_contact">Contact Me</button>  
         </div>
-        
     </section>
     <!-- About -->
     <section id="about" class="section">
@@ -193,57 +192,57 @@
             <h1>My work</h1>
         <h3>projects</h3>
         <div class="work__categories">
-            <button class="category__btn active">All <span class="category__count">8</span></button>
-            <button class="category__btn ">Front<span class="category__count">3</span></button>
-            <button class="category__btn ">Back<span class="category__count">3</span></button>
-            <button class="category__btn ">Mobile<span class="category__count">2</span></button>
+            <button class="category__btn active" data-filter="*">All <span class="category__count">8</span></button>
+            <button class="category__btn" data-filter="java_script">JavaScript<span class="category__count">3</span></button>
+            <button class="category__btn" data-filter="react">react<span class="category__count">3</span></button>
+            <button class="category__btn" data-filter="etc">etc<span class="category__count">2</span></button>
         </div>
 
         <div class="work__projects">
-            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank">
-                <img src="스크린샷" alt="스크린샷 설명" class="project__img">
+            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank" data-type="react">
+                <img src="img/about/codecamp.png" alt="스크린샷 설명" class="project__img">
                 <div class="project__description">
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
                 </div>
             </a>
-            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank">
+            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank" data-type="react">
                 <img src="img/about/codecamp.png" alt="스크린샷 설명" class="project__img">
                 <div class="project__description active"> 
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
                 </div>
             </a>
-            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank">
-                <img src="스크린샷" alt="스크린샷 설명" class="project__img">
+            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank" data-type="java_script">
+                <img src="img/about/iso.png" alt="스크린샷 설명" class="project__img">
                 <div class="project__description">
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
                 </div>
             </a>
-            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank">
-                <img src="스크린샷" alt="스크린샷 설명" class="project__img">
+            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank" data-type="java_script">
+                <img src="img/about/iso.png"  alt="스크린샷 설명" class="project__img">
                 <div class="project__description">
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
                 </div>
             </a>
-            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank">
-                <img src="스크린샷" alt="스크린샷 설명" class="project__img">
+            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank" data-type="react">
+                <img src="img/about/codecamp.png" alt="스크린샷 설명" class="project__img">
                 <div class="project__description">
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
                 </div>
             </a>
-            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank">
-                <img src="스크린샷" alt="스크린샷 설명" class="project__img">
+            <a href="https://github.com/kimsoonhong/codecamp-02"class="project" target="blank" data-type="java_script">
+                <img src="img/about/iso.png"  alt="스크린샷 설명" class="project__img">
                 <div class="project__description">
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
                 </div>
             </a>
-            <a href="https://github.com/kimsoonhong/portfolio"class="project" target="blank">
-                <img src="스크린샷" alt="스크린샷 설명" class="project__img">
+            <a href="https://github.com/kimsoonhong/portfolio"class="project" target="blank" data-type="etc">
+                <img src="img/about/ktl.png"  alt="스크린샷 설명" class="project__img">
                 <div class="project__description">
                     <h3>git site</h3>
                     <span>간단한 프로젝트 설명</span>
@@ -282,9 +281,14 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
-        <p class="contact__rights" class="section">2021 shong - All rights reserved
-
-        </p>
+        <p class="contact__rights" class="section">2021 shong - All rights reserved</p>
     </section>
+
+
+    <!-- arrow up -->
+    <button class="arrow_up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 </body>
-</html>
+</html
