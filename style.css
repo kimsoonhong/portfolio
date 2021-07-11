@@ -31,7 +31,7 @@
   --size-border-radius: 4px;
 
   /* animation */
-  --animation-duration: all 250ms ease;
+  --animation-duration: all 250ms ease-in;
 }
 
 /* Universal tags */
@@ -108,12 +108,22 @@ p {
 
 /* Navbar */
 #navber {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: 250ms all ease-in-out;
+}
+
+#navber.navber--dark {
+  background-color: var(--color-dark-blue);
+  padding: 8px;
+  transition: all 250ms ease-in-out;
+  z-index: 1;
 }
 
 .navbar__menu {
@@ -138,6 +148,7 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-blue);
+  border: 1px solid var(--color-white);
 }
 
 .navber_toggle-btn {
@@ -155,6 +166,7 @@ p {
   background: url("img/background.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
+  padding-top: 120px;
 }
 
 .home__avatar {
@@ -179,7 +191,8 @@ p {
 }
 
 .home_contact:hover {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-blue);
+  transition: var(--animation-duration);
 }
 
 /* about */
@@ -442,7 +455,7 @@ p {
 
 /* contact */
 #contact {
-  background-color: var(--color-blue);
+  background-color: var(--color-dark- blue);
 }
 
 .contact__title,
@@ -502,5 +515,9 @@ p {
   .testimonial__avatar {
     width: 100px;
     height: 100px;
+  }
+
+  .project__description {
+    opacity: 0.7;
   }
 }
